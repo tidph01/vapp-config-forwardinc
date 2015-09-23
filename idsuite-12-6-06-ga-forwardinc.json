@@ -36,7 +36,6 @@
                     "name": "DESTINATION",
                     "value": "/solution"
                   },
-                 
                   {
                     "name": "SOURCE",
                     "value": "https://github.com/ca-imag/vapp-config-forwardinc/archive/12.6.06.ga.zip"
@@ -111,7 +110,6 @@
                     "name": "DESTINATION",
                     "value": "/solution"
                   },
-                
                   {
                     "name": "SOURCE",
                     "value": "https://github.com/ca-imag/vapp-config-forwardinc/archive/12.6.06.ga.zip"
@@ -206,7 +204,6 @@
             "containers": [
               {
                 "env": [
-                 
                   {
                     "name": "SOURCE",
                     "value": "https://github.com/ca-imag/vapp-config-forwardinc/archive/12.6.06.ga.zip"
@@ -288,7 +285,6 @@
                     "name": "DESTINATION",
                     "value": "/solution"
                   },
-                 
                   {
                     "name": "SOURCE",
                     "value": "https://github.com/ca-imag/vapp-config-forwardinc/archive/12.6.06.ga.zip"
@@ -373,7 +369,6 @@
                     "name": "DESTINATION",
                     "value": "/solution"
                   },
-                 
                   {
                     "name": "SOURCE",
                     "value": "https://github.com/ca-imag/vapp-config-forwardinc/archive/12.6.06.ga.zip"
@@ -457,7 +452,6 @@
                     "name": "DESTINATION",
                     "value": "/solution"
                   },
-                 
                   {
                     "name": "SOURCE",
                     "value": "https://github.com/ca-imag/vapp-config-forwardinc/archive/12.6.06.ga.zip"
@@ -536,7 +530,6 @@
                     "name": "DESTINATION",
                     "value": "/solution"
                   },
-                 
                   {
                     "name": "SOURCE",
                     "value": "https://github.com/ca-imag/vapp-config-forwardinc/archive/12.6.06.ga.zip"
