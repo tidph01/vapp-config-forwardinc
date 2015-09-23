@@ -115,11 +115,11 @@ then
 	exit 1
 fi
 
-retval=1
-_checkConnSrvConn
-if [ $retval -eq 1 ]
-then
-	exit 1
-fi
+#retval=1
+#_checkConnSrvConn
+#if [ $retval -eq 1 ]
+#then
+#	exit 1
+#fi
 
 _end_msg

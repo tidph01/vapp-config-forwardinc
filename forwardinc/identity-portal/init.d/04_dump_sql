@@ -1,0 +1,2 @@
+echo "Dumping of data for IM connector..."
+mysql -h database -u sigma -pHelloWorld sigma < /solution/$CONFIG/data/sigma.sql

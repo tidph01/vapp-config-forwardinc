@@ -31,8 +31,9 @@ echo "Configuration of SMTP properties is done";
 sed -i "s/workpoint.stored.procedure = true/workpoint.stored.procedure = false/g"  ${JBOSS_HOME}/standalone/deployments/iam_im.ear/config/workpoint-server.properties
 
 isEnv=$(grep -Po "(?<=^sample.env.creation=).*" $ENV_PROP_FILE)
+isDumpFile=$(grep -Po "(?<=^sample.env.useDump=).*" $ENV_PROP_FILE)
 
-if [ "$isEnv" == "YES" ]; then
+if [ "$isEnv" == "YES" ]&& [ "$isDumpFile" == "NO" ]; then
 
     provDirHost=$(grep -Po "(?<=^ca.prov.dir.hostname=).*" $ENV_PROP_FILE)
         

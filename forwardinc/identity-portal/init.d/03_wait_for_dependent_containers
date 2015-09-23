@@ -1,0 +1,34 @@
+#!/bin/bash
+
+ENV_PROP_FILE=/solution/$CONFIG/data/environment.properties
+# Set variables from properties file
+valHost=`/opt/verify/parser.sh db.sigma.host $ENV_PROP_FILE`
+valPort=`/opt/verify/parser.sh db.sigma.port $ENV_PROP_FILE`
+valName=`/opt/verify/parser.sh db.sigma.name $ENV_PROP_FILE`
+valUser=`/opt/verify/parser.sh db.sigma.user $ENV_PROP_FILE`
+valPassword=`/opt/verify/parser.sh db.sigma.password $ENV_PROP_FILE`
+valDelay=2
+
+echo -e "valHost=\t$valHost"
+echo -e "valPort=\t$valPort"
+echo -e "valName=\t$valName"
+echo -e "valUser=\t$valUser"
+echo -e "valPassword=\t*********"
+echo -e "valTimeout=\t$valDelay"
+
+echo Executing: mysql --user="$valUser" --password="$valPassword" --database="$valName" --host="$valHost" --execute="select 1;"
+
+# Loop until DB comes online
+retVal=1
+counter=1
+
+while [ $retVal -ne 0 ] ; do
+ echo "Testing DB connection (attempt #${counter})"
+ mysql --user="$valUser" --password="$valPassword" --database="$valName" --host="$valHost" --execute="select 'ok';"
+ retVal=$?
+ sleep $valDelay
+ ((counter++))
+done
+
+echo DB connection test succeeded
+
