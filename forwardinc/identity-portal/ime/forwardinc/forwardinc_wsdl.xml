@@ -42262,10 +42262,10 @@
     </binding>
     <service name="Tews6">
         <port name="Tews6Port" binding="tns:Tews6SoapBinding">
-            <soap:address location="http://dev-cls-chiaz01:80/iam/im/TEWS6/forwardinc" />
+            <soap:address location="http://ui:80/iam/im/TEWS6/forwardinc" />
         </port>
         <port name="Tews6PublicPort" binding="tns:Tews6PublicSoapBinding">
-            <soap:address location="http://dev-cls-chiaz01:80/iam/im/TEWS6/pub" />
+            <soap:address location="http://ui:80/iam/im/TEWS6/pub" />
         </port>
     </service>
 </definitions>
